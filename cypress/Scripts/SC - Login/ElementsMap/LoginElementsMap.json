@@ -1,8 +1,7 @@
 {
     "LoginPageLocators": {
-        "Fompage":"#nome",
         "cpf":"input[placeholder='Informe seu CPF']",
-        "pass":"input[placeholder='Informe seu CPF']",
+        "pass":"input[placeholder='Informe sua senha']",
         "loginform":".login-form"
     }
 }

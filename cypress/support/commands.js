@@ -25,3 +25,9 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import '@testing-library/cypress/add-commands'
 
+
+Cypress.Commands.add('clickMenu', (menu) => {
+  const menuCadastros = document.querySelector('.itens-menu-principal:contains("Cadastros")'); 
+
+  menuCadastros.click();
+  });

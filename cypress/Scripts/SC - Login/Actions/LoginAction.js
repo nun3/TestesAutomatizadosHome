@@ -4,19 +4,14 @@ export class LoginAction {
 
     //outra forma de declarar os elementos » name = "#nome"
     PreencheCPF(){
-        const 
-        cpfcontext = '06445988911'
-
         cy.get(loginElement.LoginPageLocators.cpf)
         .focus()
-        .type(cpfcontext)
+        .type('06445988911')
     }
     PreenchePass(){
-        const 
-        passcontext = 'homepage'
-
         cy.get(loginElement.LoginPageLocators.pass)
-        .type(passcontext)
+        .focus()
+        .type('homepage')
     }
     GoSubmit(){
         cy.get(loginElement.LoginPageLocators.loginform)
