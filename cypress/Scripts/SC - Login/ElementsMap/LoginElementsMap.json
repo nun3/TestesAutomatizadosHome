@@ -1,9 +1,8 @@
 {
     "LoginPageLocators": {
-        "name":"#nome",
-        "telefone":"#telefone",
-        "BtnCadastrar":"button",
-        "valueName": "tbody > tr > :nth-child(1)",
-        "valueFone": "tbody > tr > :nth-child(2)"
+        "Fompage":"#nome",
+        "cpf":"input[placeholder='Informe seu CPF']",
+        "pass":"input[placeholder='Informe seu CPF']",
+        "loginform":".login-form"
     }
 }

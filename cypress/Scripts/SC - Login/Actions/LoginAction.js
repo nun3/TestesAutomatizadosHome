@@ -1,31 +1,27 @@
 const loginElement = require('../ElementsMap/LoginElementsMap.json')
+
 export class LoginAction { 
 
     //outra forma de declarar os elementos » name = "#nome"
+    PreencheCPF(){
+        const 
+        cpfcontext = '06445988911'
 
-    ExistCampoNome(){
-        cy.get(loginElement.LoginPageLocators.name)
-        .should('be.visible')
+        cy.get(loginElement.LoginPageLocators.cpf)
+        .focus()
+        .type(cpfcontext)
     }
-    PreencheNome(namecontext){
-        cy.get(loginElement.LoginPageLocators.name)
-        .type(namecontext)
-    }
-    PreencheFone(fonecontext){
-        cy.get(loginElement.LoginPageLocators.telefone)
-        .type(fonecontext)
-    }
-    ClickBtnCadastrar(){
-        cy.get(loginElement.LoginPageLocators.BtnCadastrar)
-        .click()
-    }
-    ValidaCadastroAtualizado(contextname, contextfone){
-        cy.get(loginElement.LoginPageLocators.valueName)
-        .should('be.visible')
-        .contains(contextname)
+    PreenchePass(){
+        const 
+        passcontext = 'homepage'
 
-        cy.get(loginElement.LoginPageLocators.valueFone)
-        .should('be.visible')
-        .contains(contextfone)
+        cy.get(loginElement.LoginPageLocators.pass)
+        .type(passcontext)
     }
+    GoSubmit(){
+        cy.get(loginElement.LoginPageLocators.loginform)
+        .submit();
+    }
+
 }
+
